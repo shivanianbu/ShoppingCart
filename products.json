@@ -1,0 +1,42 @@
+{
+    "products": [
+    
+      {
+        "title": "Canon Medium Format DSLR2",
+        "price": "$1200",
+        "image": "images/camera1.jpg",
+        "category": "trend"
+      },
+      {
+        "title": "ASUS X750 17 Inch laptop with keyboard",
+        "price": "$1200",
+        "image": "images/laptop1.jpg",
+        "category": "trend"
+      },
+      {
+        "title": "Samsung Galaxy Grand Neo 19060",
+        "price": "$1200",
+        "image": "images/mobile1.jpg",
+        "category": "trend"
+      },
+      {
+        "title": "Lenovo Thinkpad Tablet 2 Black",
+        "price": "$1200",
+        "image": "images/tablet1.jpg",
+        "category": "trend"
+      },
+      {
+        "title": "HP USB 2.0 Utility Pendrive V-220 W 8 GB",
+        "price": "$1200",
+        "image": "images/pendrive1.jpg",
+        "category": "trend"
+      },
+      {
+        "title": "Men Casual Shoe",
+        "price": "$1200",
+        "image": "images/camera1.jpg",
+        "category": "offer"
+      }
+    ]
+  }
+  

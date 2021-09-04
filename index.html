@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://fonts.googleapis.com css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>E-Commerce</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row header-content">
+                <div class="col-3">
+                    <a href="javascript:void(0)" class="logo"><img src="images/logo.jpg" alt="logo"></a>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <input type="search" name="search" placeholder="Enter your search term..." />
+                        <button type="submit"><img src="./images/search.png"></button>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <ul class="nav-links">
+                        <li class="close"><img src="images/logo.jpg" alt="logo"><span onclick="Hide()">×</span></li>
+
+                        <li><a href="javascript:void(0)">
+                                <div class="icon"><i class="icon-help"></i></div>
+                                <div class="name">Help</div>
+                            </a></li>
+                        <li><a href="javascript:void(0)">
+                                <div class="icon"><i class="icon-track"></i></div>
+                                <div class="name">Track</div>
+                            </a></li>
+                        <li><a href="javascript:void(0)">
+                                <div class="icon"><i class="icon-account"></i></div>
+                                <div class="name">Account</div>
+                            </a></li>
+                        <li><a href="javascript:void(0)" class="cart-btn">
+                                <div class="icon"><i class="icon-cart"></i>
+                                <div class="cart-count">0</div></div>
+                                <div class="name">My Cart</div>
+                            </a></li>
+                    </ul>
+
+                    <div class="menu-bar">
+                        <span class="menu" onclick="Show()">
+
+                        </span>
+                        <div id='overlay' class='overlay'> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="side-nav">
+                            <h6  class="side">Shop by Categories <i class="icon-dropdown"></i></h6>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="sub-navs">
+                            <a class="sub-navs-nav" href="javascript:void(0)">Our Stores</a>
+                            <a class="sub-navs-nav" href="javascript:void(0)">Gift Cards</a>
+                            <a class="sub-navs-nav" href="javascript:void(0)">Season Sale</a>
+                            <a class="sub-navs-nav" href="javascript:void(0)">Best Deals</a>
+                            <a class="sub-navs-nav" href="javascript:void(0)">Login</a>
+                            <a class="sub-navs-nav" href="javascript:void(0)">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- header END -->
+    <!-- Banner -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 drop">
+                    <div class="sub-menus">
+                        <a class="sub-menus-menu" href="javascript:void(0)">Computer<i class="icon-dropleft"></i></a>
+                        <a class="sub-menus-menu" href="javascript:void(0)">Electronics<i class="icon-dropleft"></i></a>
+                        <a class="sub-menus-menu" href="javascript:void(0)">Flower and Gifts<i class="icon-dropleft"></i></a>
+                        <a class="sub-menus-menu" href="javascript:void(0)">Furnitures<i class="icon-dropleft"></i></a>
+                        <a class="sub-menus-menu" href="javascript:void(0)">groceries<i class="icon-dropleft"></i></a>
+                        <a class="sub-menus-menu" href="javascript:void(0)">Health and Beauty<i class="icon-dropleft"></i></a>
+                        <a class="sub-menus-menu" href="javascript:void(0)">Home Improvement<i class="icon-dropleft"></i></a>
+                        <a class="sub-menus-menu" href="javascript:void(0)">Indoor Living<i class="icon-dropleft"></i></a>
+                        <a class="sub-menus-menu" href="javascript:void(0)">Industrial Supply<i class="icon-dropleft"></i></a>
+                        <a class="sub-menus-menu" href="javascript:void(0)">Jewelery & Watches<i class="icon-dropleft"></i></a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class=banner>
+                        <img src="images/background.jpg" alt="banner" class="img">
+                        <div class="content">
+                        <div class="content-body">
+                            <h1>iPhone 6 Plus</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam consequat justo</p>
+                            <a class="button">Expore Now</a>
+
+                        </div>
+                    </div>
+                        <div class="bottom-navs">
+                            <a class="bottom-nav" href="javascript:void(0)">Daily Deals</a>
+                            <a class="bottom-nav" href="javascript:void(0)">Laptops</a>
+                            <a class="bottom-nav" href="javascript:void(0)">Mobiles</a>
+                            <a class="bottom-nav" href="javascript:void(0)">Clothings</a>
+                            <a class="bottom-nav" href="javascript:void(0)">Kitchen Appliance</a>
+                            <a class="bottom-nav" href="javascript:void(0)">Gifts Vouchers</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Banner End-->
+
+    <!-- Offer -->
+    <section>
+        <div class="container">
+            <div class="offer-content">
+                <img src="images/women-cus.jpg" alt="Offer" class="img">
+                <div class="left-content">
+                    <h2>50% <span>OFF ON</span></h2>
+                    <h3>WOMEN COSMETIC</h3>
+                    <a class="button" href="javascript:void(0)">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Offer End -->
+    <section class="trending">
+        <div class="container">
+            <div class="offer-content">
+                <h6 class="topic">See What's Trending</h6>
+            </div>
+            <div class="row">
+            <div class="cards">
+               
+                </div>
+            </div>
+            </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="boxs">
+                <div class="shop-box">
+                    <img src="images/sheo.jpg" alt="Shop Now" class="img">
+                    <div class="box-text">
+                        <h5>MEN'S FOOTWARE SALE UPTO 50%</h5>
+                        <h4 class="highlight">$499</h4>
+                        <a class="button1">Shop Now</a>
+                    </div>
+                </div>
+                <div class="shop-box">
+                    <img src="images/mouse.jpg" alt="Shop Now" class="img">
+                    <div class="box-text">
+                        <h5 class="italic">MOUSE ON SALE</h5>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <a class="button2">Shop now</a>
+
+                    </div>
+                </div>
+                <div class="shop-box">
+                    <img src="images/frocks.jpg" alt="Shop Now" class="img">
+                    <div class="box-text">
+                        <h5 class="poiret">WOMEN APPAREL SALE UPTO 30%</h5>
+                        <h4>$599</h4>
+                        <a class="button3">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cart Overlay -->
+    <div class="cart-overlay">
+        <div class="cart-products">
+            <span class="close-cart">X</span>
+            <h6 class="cart-header">Your Cart</h6>
+            <!-- Cart Item -->
+         <div class="cart-box"> 
+               
+            </div>  
+            <!-- Cart Item ENd -->
+            <div class="cart-footer">
+                <h6>Total : $ <span class="cart-total">0</span></h6>
+                <button class="button clr-cart">Clear Cart</button>
+            </div>
+        </div>
+        </div>
+    
+     <!-- Cart Overlay End-->
+    <!-- Custom Script -->
+    <script src="./js/app.js"></script>
+
+  
+    <!-- Custom Script end -->
+</body>
+
+</html>

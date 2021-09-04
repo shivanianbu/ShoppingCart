@@ -1,0 +1,135 @@
+ .cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  z-index: 2;
+
+ }
+.cart-products {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  width: 80%;
+  padding: 20px;
+  border-radius: 2rem;
+  z-index: 3;
+  background-color: $header;
+  opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+}
+.cart-products.show{
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-overlay.show {
+  visibility: visible;
+}
+  .close-cart
+  {
+    background-color: $header;
+   color: $header;
+    padding: 5px 8px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+  }
+
+  .cart-item {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5rem;
+    margin:20px ;
+    border: 1px solid $grey;
+  }
+
+  
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+  }
+  .cart-item .name {
+    font-size: 20px;
+    letter-spacing: 1.6;
+  }
+  .cart-item h6 {
+    margin: 5px 0;
+    letter-spacing: 1.6;
+  }
+  .remove-item {
+    color: red;
+    cursor: pointer;
+    font-size: small;
+  }
+  .item-amount {
+    color: black;
+  }
+  .counter {
+    
+    margin: 20px;
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+
+    p{
+      width: 50px;
+    border: 0;
+    line-height: 2px;
+    font-size: 20px;
+    text-align: center;
+    background: #ee9116;
+    color: #fff;
+  
+    }
+    span {
+      display: block;
+      font-size: 25px;
+      padding: 0 10px;
+      cursor: pointer;
+      color: black;
+      user-select: none;
+  }
+}
+  .cart-footer {
+    margin-top: 2rem;
+    letter-spacing: 1.6;
+    text-align: center;
+
+  }
+  .cart-footer h6{
+    color: #ee9116;
+  }
+.clr-cart
+{
+background: #ee9116;
+position: relative;
+}
+
+
+@media only screen and (max-width:576px) {
+
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+  }
+ 
+  .cart-item
+  {
+    display: flex;
+    flex-direction: column;
+    padding:10px 0;
+  }
+}

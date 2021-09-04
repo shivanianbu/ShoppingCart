@@ -1,0 +1,27 @@
+@mixin padding {
+    padding-bottom: 10px;
+  }
+
+@mixin margin
+{
+  margin: 30px 0;
+  position: relative;
+}  
+@mixin button
+ {
+  background-color: $orange;
+  border: none;
+  color:$header;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@mixin button-reduce {
+  padding: 5px 10px;
+  font-size: 10px;
+
+}

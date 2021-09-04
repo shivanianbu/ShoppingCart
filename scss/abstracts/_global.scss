@@ -1,0 +1,64 @@
+.container
+{
+    max-width: 1170px;
+    margin: auto;
+}
+.row
+{
+ display: flex;
+ flex-wrap: wrap;
+ height: 100%;
+}
+.col-1 {width: 8.33%; text-align: center; height: 100%;}
+.col-2 {width: 25%;}
+.col-3 {  width: 25%;text-align: center;  height: 100%;}
+.col-4 {width: 33.33%; text-align: center; height: 100%;}
+.col-5 {width: 41.66%; text-align: center; height: 100%;}
+.col-6 {width: 50%; text-align: center; height: 100%;}
+.col-7 {width: 58.33%; text-align: center}
+.col-8 {width: 66.66%; text-align: center;}
+.col-9 {width: 75%;height:auto}
+.col-10 {width: 83.33%; text-align: center;}
+.col-11 {width: 91.66%; text-align: center;}
+.col-12 {width: 100%; text-align: center;}
+
+.img
+{
+    width: 100%;
+}
+@media only screen and (max-width: 1200px)
+{
+	.container
+	{
+		max-width: 980px;
+	}
+}
+@media only screen and (max-width: 992px)
+{
+	.container
+	{
+		max-width: 770px;
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	.container
+	{
+		max-width: 100%;
+		padding:  0 20px;
+				
+	}
+}
+
+
+@media only screen and (max-width: 576px)
+
+{
+	.container
+	{
+		// max-width: 380px;
+		max-width: 90%;
+	}
+	
+}

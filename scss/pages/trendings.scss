@@ -1,0 +1,98 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.cards {
+
+    background: $header;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+   width:100%;
+
+    .card {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid $grey;
+        .text
+        {
+            text-align: left;
+            margin-top: 5px;
+            padding: 10px 0;
+            .name
+            {
+                @include padding;
+            }
+
+        }
+      
+    }
+    .product-cart
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $grey;
+        height: 35px;
+    a 
+    {
+        padding: 10px;
+      
+    }
+    // .bag-btn
+    // {
+    //     padding: 15px;
+    //     // background: $blue;
+    //     // border-radius: 50%;
+    //     text-align: center;
+    // }
+    .icon-shoppingcart
+    {
+        
+        background-size:cover;
+        padding: 20px ;
+        cursor: pointer;
+        background: url('../images/shoppingcart.png') no-repeat;
+      
+    }
+   
+    .search-cart
+    {
+        background: url('../images/search-cart.png') no-repeat; 
+        background-size:cover;
+      
+    }
+    .analytics
+    {
+        background: url('../images/analytics.png') no-repeat;
+        background-size:cover;
+      
+    }
+
+}
+}
+
+
+
+
+@media only screen and (max-width: 1200px)
+{
+
+.cards{
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 992px)
+{
+.cards
+{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   }  
+}
+
+@media only screen and(max-width: 768px){
+    
+    
+    .cards, .boxs{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

@@ -1,0 +1,20 @@
+@import "./base/reset";
+
+@import "./abstracts/variables";
+@import "./abstracts/global"; 
+@import "./abstracts/mixins";
+
+@import "./base/typography";
+@import "./base/fonts";
+
+@import "./components/header";
+@import "./components/buttons";
+
+
+@import "./pages/banner";
+@import "./pages/women_cosmetic.scss";
+@import "./pages/trendings.scss";
+@import "./pages/posters.scss";
+
+@import "./components/cart";
+  

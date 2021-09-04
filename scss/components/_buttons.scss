@@ -1,0 +1,72 @@
+.button{ 
+  @include button;
+   }
+.left-content
+{
+   .button{
+
+      background-color: $light-orange;
+
+   }
+}
+.box-text
+{
+   .button1
+   {
+      @include button;
+   background-color: $dark-orange;
+   }
+   .button2
+   {
+      @include button;
+   background-color: $dark-pink;
+   }
+   .button3
+   {
+      @include button;
+   background-color: $dark-green;
+   }
+}
+
+@media only screen and (max-width: 992px)
+{
+  .left-content{
+   .button
+   {
+      padding: 8px 10px ;
+      font-size: 14px;
+   }
+}
+}
+@media only screen and (max-width: 768px)
+{
+   .left-content{
+      .button
+      {
+         padding: 5px 10px ;
+         font-size: 11px;
+      }
+   }
+}
+@media only screen and (max-width: 576px)
+{
+   .button
+   {
+      padding: 5px 10px;
+      font-size: 8px;
+   }
+   .left-content{
+      .button
+      {
+         padding: 5px 5px ;
+         font-size: 9x;
+      }
+   }
+   .box-text
+{
+   .button1, .button2, .button3
+   {
+      @include button-reduce;
+   }
+}
+}

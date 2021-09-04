@@ -1,0 +1,80 @@
+.cards {
+  background: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(223px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+  width: 100%;
+}
+
+.cards .card {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #DAD1D1;
+}
+
+.cards .card .text {
+  text-align: left;
+  margin-top: 5px;
+  padding: 10px 0;
+}
+
+.cards .card .text .name {
+  padding-bottom: 10px;
+}
+
+.cards .product-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #DAD1D1;
+  height: 35px;
+}
+
+.cards .product-cart a {
+  padding: 10px;
+}
+
+.cards .product-cart .icon-shoppingcart {
+  background-size: cover;
+  padding: 20px;
+  cursor: pointer;
+  background: url("../images/shoppingcart.png") no-repeat;
+}
+
+.cards .product-cart .search-cart {
+  background: url("../images/search-cart.png") no-repeat;
+  background-size: cover;
+}
+
+.cards .product-cart .analytics {
+  background: url("../images/analytics.png") no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+  .cards {
+    -ms-grid-columns: (minmax(190px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .cards {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards, .boxs {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
